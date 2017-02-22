@@ -35,7 +35,7 @@ class RoomsController < ApplicationController
 
     redirect_to rooms_path, notice: "La habitacion ha sido eliminada con exito"
   end
-
+  #Comentario para hacer merge y subir
   protected
     def room_params
       params.require(:room).permit(:title, :description, :beds, :guests, :image_url, :price_per_night)
